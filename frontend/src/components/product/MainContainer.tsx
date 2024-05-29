@@ -23,7 +23,7 @@ export default function MainContainer() {
         <div className="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-6 lg:gap-8">
           <div className="group aspect-h-1 aspect-w-2 overflow-hidden rounded-sm sm:aspect-h-1 sm:aspect-w-1 sm:row-span-2">
             <img
-              src="https://tailwindui.com/img/ecommerce-images/home-page-03-featured-category.jpg"
+              src="https://i.ibb.co/LrKMFpC/HookEm.png"
               alt="Two models wearing women's black cotton crewneck tee and off-white cotton crewneck tee."
               className="object-cover object-center group-hover:opacity-75 h-full w-full"
             />
@@ -32,7 +32,6 @@ export default function MainContainer() {
               className="bg-gradient-to-b from-transparent to-black opacity-50"
             />
           </div>
-          {/* Item information */}
           <div className="group h-full aspect-w-2 overflow-hidden rounded-lg sm:aspect-h-1 sm:aspect-w-1 sm:row-span-2 flex flex-col justify-between">
             <div className="text-white p-4">
               <h1 className="text-2xl font-bold">Project Management Board</h1>
@@ -49,7 +48,11 @@ export default function MainContainer() {
                   className="flex flex-col items-center cursor-pointer"
                   onClick={() => handleMaterialSelect("GOLD", 10)}
                 >
-                  <div className="bg-gray-500 w-36 h-36 opacity-60 hover:opacity-100 transition-opacity ease-in-out duration-300"></div>
+                  <img
+                    src="https://img.pikbest.com/backgrounds/20191122/golden-gradient-metal-texture-matte-texture-background_2763042.jpg!bw700"
+                    alt="Gold texture"
+                    className="w-36 h-36 opacity-60 hover:opacity-100 transition-opacity ease-in-out duration-300"
+                  />
                   <h1 className="mt-2">GOLD</h1>
                   <p className="text-sm mt-1">10 DOT</p>
                 </div>
@@ -57,7 +60,11 @@ export default function MainContainer() {
                   className="flex flex-col items-center cursor-pointer"
                   onClick={() => handleMaterialSelect("SILVER", 5)}
                 >
-                  <div className="bg-gray-500 w-36 h-36 opacity-60 hover:opacity-100 transition-opacity ease-in-out duration-300"></div>
+                  <img
+                    src="https://t4.ftcdn.net/jpg/04/77/22/99/360_F_477229935_4ZRTM2OjnSlNHFlNt168hs4mqDrukKAs.jpg"
+                    alt="Silver texture"
+                    className="w-36 h-36 opacity-60 hover:opacity-100 transition-opacity ease-in-out duration-300"
+                  />
                   <h1 className="mt-2">SILVER</h1>
                   <p className="text-sm mt-1">5 DOT</p>
                 </div>
@@ -65,7 +72,11 @@ export default function MainContainer() {
                   className="flex flex-col items-center cursor-pointer"
                   onClick={() => handleMaterialSelect("PLATINUM", 20)}
                 >
-                  <div className="bg-gray-500 w-36 h-36 opacity-60 hover:opacity-100 transition-opacity ease-in-out duration-300"></div>
+                  <img
+                    src="https://t3.ftcdn.net/jpg/02/07/13/36/360_F_207133679_tGuezrUoWSoJtNfxXaaK4jSrXpZHNqr6.jpg"
+                    alt="Platinum texture"
+                    className="w-36 h-36 opacity-60 hover:opacity-100 transition-opacity ease-in-out duration-300"
+                  />
                   <h1 className="mt-2">PLATINUM</h1>
                   <p className="text-sm mt-1">20 DOT</p>
                 </div>
@@ -81,9 +92,11 @@ export default function MainContainer() {
                 onChange={handleCustomizeChange}
               />
             </div>
-            <div className="text-white p-4">
-              <h1>Buy</h1>
-            </div>
+            <a href="/checkout">
+              <div className="text-white p-4 pl-8 pr-8 pt-4 pb-4 bg-red-300 text-center">
+                <p>BUY</p>
+              </div>
+            </a>
             <div
               aria-hidden="true"
               className="bg-gradient-to-b from-transparent to-black opacity-50"
