@@ -2,7 +2,10 @@ import { ChevronRightIcon } from "@heroicons/react/20/solid";
 
 export default function MainContainer() {
   return (
-    <div className="relative isolate overflow-hidden bg-black">
+    <div
+      id="main-container"
+      className="relative isolate overflow-hidden bg-black"
+    >
       <div className="absolute inset-0 -z-10">
         <img
           src="https://i.ibb.co/mv7t9GL/Background.png"
@@ -42,9 +45,9 @@ export default function MainContainer() {
             </a>
           </div>
         </div>
-      </div>{" "}
+      </div>
       <style jsx>{`
-        div::after {
+        #main-container::after {
           content: "";
           display: block;
           width: calc(100% - 60px);
