@@ -1,7 +1,7 @@
 import Navigation from "@/components/ui/Navigation";
 
-const ProductPage = () => {
+const CheckoutPage = () => {
   return <Navigation />;
 };
 
-export default ProductPage;
+export default CheckoutPage;
