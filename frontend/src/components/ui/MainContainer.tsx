@@ -38,7 +38,7 @@ export default function MainContainer() {
           </p>
           <div className="mt-10 flex items-center gap-x-6">
             <a
-              href="#"
+              href="/product/"
               className="rounded-md border border-blue-400 hover:border-blue-500 bg-white/10 px-3.5 py-2.5 text-sm font-semibold text-white hover:bg-white/30"
             >
               Customize and Buy

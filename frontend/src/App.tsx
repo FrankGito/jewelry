@@ -1,13 +1,11 @@
-import MainContainer from "./components/ui/MainContainer";
-import Navigation from "./components/ui/Navigation";
-import SpotlightGrid from "./components/ui/SpotlightGrid";
+// src/main.jsx
+import React from "react";
+import ReactDOM from "react-dom";
+import HomePage from "./pages/HomePage";
 
-export default function Example() {
-  return (
-    <>
-      <Navigation />
-      <MainContainer />
-      <SpotlightGrid />
-    </>
-  );
-}
+ReactDOM.render(
+  <React.StrictMode>
+    <HomePage />
+  </React.StrictMode>,
+  document.getElementById("root"),
+);
