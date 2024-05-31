@@ -23,7 +23,8 @@ This cli script builds the base for a succesfull integration on the Frontend.
 2. `pnpm run cli`
 
 ## TODO
+- [x] create default account
 - [ ] create collection on unique
 - [ ] mint empty token
 - [ ] mint non empty token
-- [ ] use cli and pass token to to tokencreation
+- [ ] use cli and pass token to tokencreation
