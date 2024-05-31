@@ -15,17 +15,19 @@
 
 ## Screenshot
 
-##Contacts
 ![Screenshot](https://i.ibb.co/rsKbqp3/Frontend.png)
 
 ## Summary
 
 Welcome to the Babes Repository!
 
-We are Frank, Don, Sam, Watson, and Theresa. Our project aims to revolutionize the sports merchandise industry by leveraging generative AI and the Polkadot blockchain. We provide an innovative platform for creating customized 3D printed jewelry tailored specifically for sports teams and their fans. This platform not only enhances the personalization of merchandise but also ensures secure and transparent transactions.
+We are Frank, Don, Sam, Watson, and Theresa.   
+Our project aims to revolutionize the sports merchandise industry by leveraging generative AI and the Polkadot blockchain.  
+We provide an innovative platform for creating customized 3D printed jewelry tailored specifically for sports teams and their fans.  
+This platform not only enhances the personalization of merchandise but also ensures secure and transparent transactions.
 
-## Key Features##
-
+<details>
+  <summary>See key features</summary>
 - **Generative AI**: Utilizes meshy.ai to design unique and personalized jewelry based on user prompts.
 - **AI Agents**: Phala AI agent enhances user interaction and customization capabilities.
 - **E-commerce Platform**: Built using Talisman for efficient management of digital assets and transactions.
@@ -38,6 +40,44 @@ We are Frank, Don, Sam, Watson, and Theresa. Our project aims to revolutionize t
 - **3D Rendering**: Employs TLGB for high-quality 3D rendering of jewelry designs.
 - **NextJS & Tailwind**: Modern web technologies for a responsive and user-friendly platform.
 - **Decentralized 3D Printing**: Future plans to scale with Robonomics for decentralized 3D printing capabilities.
+</details>
+
+## Elaboration
+
+```md
+Hola everyone :wave: ,
+
+I'm Frank. My goal is to explain what we are doing.  
+We created Babes. Babes is a Website. It allows you to buy a necklace.
+The necklace is composed of two parts. 
+- First, the chain. A standard necklace, that you see in every jewelry shop.
+- Second, the 3D Printed customized Accesoire. 
+
+The accesoire is special. It lives on chain and was created fully on chain. 
+Let me elobrate what I mean.
+
+**The process**  
+You give your necklace creation a piece of Text.  
+
+Lets assume, you say you want to have a `fist with bullhorns`.  
+This piece of Text gets passed on a HTTP Server, which sits on the Phala Blockchain.  
+Phala allows decentralized computation.   
+The Http server recieves the your description and calls another service.  
+This service is Meshy.ai. Meshy.ai allows to convert text to a 3D Model.  
+After Meshy creates sucessfully the 3D Model it says to our HTTP Server "I am finished".  
+Now we created sucessfully in a decentralized manner a 3D Model.  
+
+You as the customer, see your wonderful creation.   
+You are pressing buy. The magic continues.  
+
+We take your 3D Creation and call a 3D Printer that sits on the Robonomics Blockchain.  
+The robonomics Blockchain is a decentralized manufacturing Blochchain.  
+We calling robonomics to start printing.   
+
+After the printing starts we craft our digital reprenstation of your creation.
+
+Cheers :sun_partially_clouded:
+```
 
 ### Deep Dive
 
