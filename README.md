@@ -6,7 +6,7 @@
   <p align="center">
   <br />
     <a href="http://babes.surge.sh">Babes Demo v0.0.1</a>
-    ·<a href="[https://github.com/frankgito/jewelry](https://www.canva.com/design/DAGGqxunVKo/zDm6AHA1qEIRjXFWL5J9gA/edit?utm_content=DAGGqxunVKo&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)">Pitch Deck</a>
+    ·<a href="[https://www.canva.com/design/DAGGqxunVKo/zDm6AHA1qEIRjXFWL5J9gA/edit?utm_content=DAGGqxunVKo&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton]">Pitch Deck</a>
     ·
     <a href="https://github.com/frankgito/jewelry">Repo</a>
   g</p>
