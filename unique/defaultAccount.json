@@ -1,6 +1,7 @@
 {
     "mnemonic": "sand vintage dose spread illness denial west survey foot deny knee immune",
     "publicKey": "0x4a902b334d66a68b2592f9f20aa2a5b8851d77c7601694f7b17637c08011995e",
+    "address": "5DkUEADN2ATBoqSszgA4SCKHdYmu17AyLXVP2vV9K6NY221e",
     "keyfile": {
       "encoded": [74, 144, 43, 51, 77, 102, 166, 139, 37, 146, 249, 242, 10, 162, 165, 184, 133, 29, 119, 199, 96, 22, 148, 247, 177, 118, 55, 192, 128, 17, 153, 94],
       "encoding": {
@@ -8,7 +9,6 @@
         "type": ["sr25519"],
         "version": "3"
       },
-      "address": "5DkUEADN2ATBoqSszgA4SCKHdYmu17AyLXVP2vV9K6NY221e",
       "meta": {
         "name": "my_test_account"
       }

@@ -29,11 +29,11 @@ export default function MainContainer() {
               </span>
             </a>
           </div>
-          <h1 className="mt-10 text-2xl font-bold tracking-tight text-white sm:text-6xl">
+          <h1 className="mt-10 text-2xl font-bold tracking-tight text-white sm:text-6xl pb-2">
             Karate Combat Collection
           </h1>
           <p className="mt-6 text-lg leading-8 text-gray-300">
-            This project management dashboard template is designed for project
+            Get the Babes genesis drop. Paying homage to Karate Kombat.{" "}
           </p>
           <div className="mt-10 flex items-center gap-x-6">
             <a

@@ -1,4 +1,8 @@
-export default function UnpopularGrid({ title }) {
+type Props = {
+  title: string;
+};
+
+export default function UnpopularGrid({ title }: Props) {
   return (
     <>
       <div className="bg-black">
