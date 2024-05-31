@@ -32,5 +32,6 @@ This cli script builds the base for a succesfull integration on the Frontend.
 ## Iteration 1
 Created a default account for test minting on opal  
 Created a test collection with id: 2869  
-Minted a test NFT to collection 2869 with token id: 1
+https://uniquescan.io/opal/collections/2869  
+Minted a test NFT to collection 2869 with token id: 1  
 https://uniquescan.io/opal/tokens/2869/1
