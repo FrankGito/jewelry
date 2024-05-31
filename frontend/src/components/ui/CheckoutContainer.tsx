@@ -1,20 +1,6 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
-const products = [
-  {
-    id: 1,
-    name: "Women's Basic Tee",
-    href: "#",
-    price: "$32.00",
-    color: "Gray",
-    size: "S",
-    imageSrc:
-      "https://tailwindui.com/img/ecommerce-images/checkout-page-05-product-01.jpg",
-    imageAlt: "Front of women's basic tee in heather gray.",
-  },
-];
-
-export default function CheckoutContainer() {
+export default function CheckoutContainer({ customizedData }) {
   const [shippingAddress, setShippingAddress] = useState({
     email: "",
     phone: "",
@@ -28,6 +14,10 @@ export default function CheckoutContainer() {
     country: "",
     terms: false,
   });
+
+  useEffect(() => {
+    console.log(customizedData); // Log the customized data
+  }, [customizedData]);
 
   const handleInputChange = (e) => {
     const { name, value, type, checked } = e.target;
@@ -54,50 +44,49 @@ export default function CheckoutContainer() {
 
             <div className="flow-root">
               <ul role="list" className="-my-6 divide-y divide-gray-200">
-                {products.map((product) => (
-                  <li key={product.id} className="flex space-x-6 py-6">
-                    <img
-                      src={product.imageSrc}
-                      alt={product.imageAlt}
-                      className="h-24 w-24 flex-none rounded-md bg-gray-100 object-cover object-center"
-                    />
-                    <div className="flex-auto">
-                      <div className="space-y-1 sm:flex sm:items-start sm:justify-between sm:space-x-6">
-                        <div className="flex-auto space-y-1 text-sm font-medium">
-                          <h3 className="text-gray-200">
-                            <a href={product.href}>{product.name}</a>
-                          </h3>
-                          <p className="text-gray-200">{product.price}</p>
-                          <p className="hidden text-gray-200 sm:block">
-                            {product.color}
-                          </p>
-                          <p className="hidden text-gray-100 sm:block">
-                            {product.size}
-                          </p>
-                        </div>
+                <li className="flex space-x-6 py-6">
+                  <img
+                    src="https://tailwindui.com/img/ecommerce-images/checkout-page-05-product-01.jpg"
+                    alt="Front of women's basic tee in heather gray."
+                    className="h-24 w-24 flex-none rounded-md bg-gray-100 object-cover object-center"
+                  />
+                  <div className="flex-auto">
+                    <div className="space-y-1 sm:flex sm:items-start sm:justify-between sm:space-x-6">
+                      <div className="flex-auto space-y-1 text-sm font-medium">
+                        <h3 className="text-gray-200">
+                          <a href="#">{customizedData.customizeText}</a>
+                        </h3>
+                        <p className="text-gray-200">
+                          {customizedData.totalPrice} DOT
+                        </p>
+                        <p className="hidden text-gray-200 sm:block">
+                          {customizedData.selectedMaterial}
+                        </p>
                       </div>
                     </div>
-                  </li>
-                ))}
+                  </div>
+                </li>
               </ul>
             </div>
 
             <dl className="mt-10 space-y-6 text-sm font-medium text-gray-500">
               <div className="flex justify-between">
                 <dt>Subtotal</dt>
-                <dd className="text-gray-200">$32.00</dd>
+                <dd className="text-gray-200">
+                  {customizedData.totalPrice} DOT
+                </dd>
               </div>
               <div className="flex justify-between">
                 <dt>Taxes</dt>
-                <dd className="text-gray-200">$2.56</dd>
+                <dd className="text-gray-200">Included</dd>
               </div>
               <div className="flex justify-between">
                 <dt>Shipping</dt>
-                <dd className="text-gray-200">$14.00</dd>
+                <dd className="text-gray-200">Free</dd>
               </div>
               <div className="flex justify-between border-t border-gray-200 pt-6 text-gray-200">
                 <dt className="text-base">Total</dt>
-                <dd className="text-base">$48.56</dd>
+                <dd className="text-base">{customizedData.totalPrice} DOT</dd>
               </div>
             </dl>
           </div>
