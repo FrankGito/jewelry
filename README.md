@@ -16,13 +16,29 @@
 ## Screenshot
 
 ##Contacts
-![Screenshot](https://i.ibb.co/6mQ1jyz/image.png)
+![Screenshot](https://i.ibb.co/rsKbqp3/Frontend.png)
 
 ## Summary 
 
-We are Mark and Frank.  
-We created **Printz**. 
-Printz is a decentralised 3D Printing Service.  
+Welcome to the Babes Repository!
+
+We are Frank, Don, Sam, Watson, and Theresa. Our project aims to revolutionize the sports merchandise industry by leveraging generative AI and the Polkadot blockchain. We provide an innovative platform for creating customized 3D printed jewelry tailored specifically for sports teams and their fans. This platform not only enhances the personalization of merchandise but also ensures secure and transparent transactions.
+
+## Key Features##
+
+- **Generative AI**: Utilizes meshy.ai to design unique and personalized jewelry based on user prompts.
+- **AI Agents**: Phala AI agent enhances user interaction and customization capabilities.
+- **E-commerce Platform**: Built using Talisman for efficient management of digital assets and transactions.
+- **Automation**: Streamlined operations for efficient process management.
+- **NFTs**: Integration with Unique Network for creating and authenticating NFTs, adding a layer of exclusivity and security.
+- **Blockchain**: Powered by Polkadot, ensuring interoperability, scalability, and robust security.
+- **Direct-to-Consumer**: Allows users to directly customize and purchase their unique jewelry.
+- **Customizable for Businesses**: Provides options for businesses and sports teams to create branded, personalized merchandise.
+- **Web3 Integration**: Utilizes Web3 technologies for decentralized and secure transactions.
+- **3D Rendering**: Employs TLGB for high-quality 3D rendering of jewelry designs.
+- **NextJS & Tailwind**: Modern web technologies for a responsive and user-friendly platform.
+- **Smart Contracts**: Implemented using Rust and ink! for secure and efficient blockchain operations.
+- **Decentralized 3D Printing**: Future plans to scale with Robonomics for decentralized 3D printing capabilities.
 
 ### Deep Dive
 
@@ -33,23 +49,7 @@ Printz is a decentralised 3D Printing Service.
 - [Contracts README.md](./contracts/README.md)
 - [Frontend README.md](./frontend/README.md)
 
-## Quickstart
-
-- `cd backend && sudo systemctl start postgresql && ipfs daemon && deno run -A main.ts`
-- `cd contracts/item && cargo contract build && substrate-contracts-node --dev && cargo contract instantiate --suri //Alice --args 0 --execute`
-- copy contract address and over-paste it in `./frontend/src/composables/usePsp34.ts`
-- `cd frontend && deno task dev`
-
-## Contacts
-
-| Name  | Telegram  | Discord    |
-| :---- | :-------- | :--------- |
-| Frank | frankbevr | frankbevr  |
-| Mark  | proxy720  | proxy_0441 |
-
-
-
-Contacts
+## Contact
 
 |Name|Discord|Telegram|
 |:-|:-|:-|
