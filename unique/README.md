@@ -4,7 +4,7 @@ This folder contains our Unique Expermintentaion.
 The goal is to have a cli which takes the following input:
 ```json
 {
-  thumbmail: "link to a preview image",
+  thumbnail: "link to a preview image",
   model: "link to a glb file",
   robonomics: "transaction hash that production is started",
   phala: "transaction hash of finalized computiation of 3d creation"
