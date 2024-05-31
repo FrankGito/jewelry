@@ -34,11 +34,10 @@ export default function MainContainer() {
           </h1>
           <p className="mt-6 text-lg leading-8 text-gray-300">
             This project management dashboard template is designed for project
-            managers
           </p>
           <div className="mt-10 flex items-center gap-x-6">
             <a
-              href="/product/"
+              href="/spotlight-collection/"
               className="rounded-md border border-blue-400 hover:border-blue-500 bg-white/10 px-3.5 py-2.5 text-sm font-semibold text-white hover:bg-white/30"
             >
               Customize and Buy
