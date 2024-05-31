@@ -11,7 +11,7 @@ async function GET(req: Request): Promise<Response> {
   let modelUrl = "";
 
   // Declare prompt input
-  const prompt = "Dolphin";
+  const prompt = "Penguin";
 
   // Declare Header
   const headers = { Authorization: `Bearer ${api_key}` };
