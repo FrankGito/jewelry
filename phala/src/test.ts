@@ -1,5 +1,4 @@
 import main from "./index";
-import "dotenv/config";
 
 async function execute(inputObj: any) {
   const inputJson = JSON.stringify(inputObj);
@@ -17,6 +16,6 @@ async function test() {
 }
 
 test()
-  .then(() => {})
+  .then(() => { })
   .catch((err) => console.error(err))
   .finally(() => process.exit());
