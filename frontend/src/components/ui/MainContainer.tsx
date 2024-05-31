@@ -33,7 +33,7 @@ export default function MainContainer() {
             Karate Combat Collection
           </h1>
           <p className="mt-6 text-lg leading-8 text-gray-300">
-            This project management dashboard template is designed for project
+            Get the Babes genesis drop. Paying homage to Karate Kombat.{" "}
           </p>
           <div className="mt-10 flex items-center gap-x-6">
             <a
