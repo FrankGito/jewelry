@@ -1,4 +1,5 @@
 import { useState } from "react";
+import CheckoutContainer from "@/components/ui/CheckoutContainer";
 
 export default function MainContainer() {
   const [customizeText, setCustomizeText] = useState("");
@@ -7,6 +8,7 @@ export default function MainContainer() {
   const [selectedMaterial, setSelectedMaterial] = useState("None");
   const [phase, setPhase] = useState("Craft");
   const [loading, setLoading] = useState(false);
+  const [showCheckout, setShowCheckout] = useState(false);
 
   const handleCustomizeChange = (event) => {
     setCustomizeText(event.target.value);
@@ -37,11 +39,21 @@ export default function MainContainer() {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-      window.location.href = "/checkout";
+      setShowCheckout(true); // Show checkout component
     }, 2000); // Simulate a loading time of 2 seconds
   };
 
   const totalPrice = basePrice + selectedMaterialPrice;
+
+  const customizedData = {
+    customizeText,
+    selectedMaterial,
+    totalPrice,
+  };
+
+  if (showCheckout) {
+    return <CheckoutContainer customizedData={customizedData} />;
+  }
 
   return (
     <div className="bg-black">
@@ -141,7 +153,7 @@ export default function MainContainer() {
                 className="text-white p-4 pl-8 pr-8 pt-4 pb-4 bg-red-500 text-center cursor-pointer"
                 onClick={handleNFT}
               >
-                <p>{loading ? "Processing..." : "Buy"}</p>
+                <p>{loading ? "Processing..." : "NFT"}</p>
               </div>
             )}
             <div
