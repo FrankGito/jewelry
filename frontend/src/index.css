@@ -4,6 +4,11 @@
 
 :root {
     background-color: black;
+    cursor: crosshair;
+}
+
+::selection {
+    background: #d3d71c;
 }
 
 @layer base {

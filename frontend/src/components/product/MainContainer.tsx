@@ -1,14 +1,15 @@
 import { useState } from "react";
 import CheckoutContainer from "@/components/ui/CheckoutContainer";
+import HookEmHorms from "../canvas/HookEm";
 
 export default function MainContainer() {
   const [customizeText, setCustomizeText] = useState("");
-  const [basePrice] = useState(90); // Initial base price is 90 DOT
+  const [basePrice] = useState(90);
   const [selectedMaterialPrice, setSelectedMaterialPrice] = useState(0);
   const [selectedMaterial, setSelectedMaterial] = useState("None");
   const [phase, setPhase] = useState("Craft");
-  const [loading, setLoading] = useState(false);
   const [showCheckout, setShowCheckout] = useState(false);
+  const [showCanvas, setShowCanvas] = useState(false);
 
   const handleCustomizeChange = (event) => {
     setCustomizeText(event.target.value);
@@ -24,23 +25,16 @@ export default function MainContainer() {
 
   const handleCraft = () => {
     setPhase("Mint");
+    setShowCanvas(true);
   };
 
   const handleMint = () => {
-    setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
-      alert("FUNCTIONAL");
-      setPhase("NFT");
-    }, 2000); // Simulate a loading time of 2 seconds
+    alert("FUNCTIONAL");
+    setPhase("Checkout");
   };
 
   const handleNFT = () => {
-    setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
-      setShowCheckout(true); // Show checkout component
-    }, 2000); // Simulate a loading time of 2 seconds
+    setShowCheckout(true);
   };
 
   const totalPrice = basePrice + selectedMaterialPrice;
@@ -59,20 +53,28 @@ export default function MainContainer() {
     <div className="bg-black">
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
         <div className="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-6 lg:gap-8">
-          <div className="group aspect-h-1 aspect-w-2 overflow-hidden rounded-sm sm:aspect-h-1 sm:aspect-w-1 sm:row-span-2">
-            <img
-              src="https://i.ibb.co/LrKMFpC/HookEm.png"
-              alt="Two models wearing women's black cotton crewneck tee and off-white cotton crewneck tee."
-              className="object-cover object-center group-hover:opacity-75 h-full w-full"
-            />
-            <div
-              aria-hidden="true"
-              className="bg-gradient-to-b from-transparent to-black opacity-50"
-            />
+          <div className="group h-96 w-full aspect-h-1 aspect-w-2 overflow-hidden rounded-sm sm:aspect-h-1 sm:aspect-w-1 sm:row-span-2">
+            {showCanvas ? (
+              <HookEmHorms />
+            ) : (
+              <>
+                <img
+                  src="https://i.ibb.co/58SwMXp/Knuckles.png"
+                  alt="Fantastic image of knuckles."
+                  className="object-cover object-center group-hover:opacity-75 h-full w-full"
+                />
+                <div
+                  aria-hidden="true"
+                  className="bg-gradient-to-b from-transparent to-black opacity-50"
+                />
+              </>
+            )}
           </div>
           <div className="group h-full aspect-w-2 overflow-hidden rounded-lg sm:aspect-h-1 sm:aspect-w-1 sm:row-span-2 flex flex-col justify-between">
             <div className="text-white p-4">
-              <h1 className="text-2xl font-bold">Project Management Board</h1>
+              <h1 className="text-2xl font-bold">
+                Karate Kombat Necklace & Punch Pendant
+              </h1>
             </div>
             <div className="text-white p-4">
               <h1 className="text-xl font-semibold">{totalPrice} DOT</h1>
@@ -145,15 +147,15 @@ export default function MainContainer() {
                 className="text-white p-4 pl-8 pr-8 pt-4 pb-4 bg-green-500 text-center cursor-pointer"
                 onClick={handleMint}
               >
-                <p>{loading ? "Loading..." : "MINT"}</p>
+                <p>MINT</p>
               </div>
             )}
-            {phase === "NFT" && (
+            {phase === "Checkout" && (
               <div
                 className="text-white p-4 pl-8 pr-8 pt-4 pb-4 bg-red-500 text-center cursor-pointer"
                 onClick={handleNFT}
               >
-                <p>{loading ? "Processing..." : "NFT"}</p>
+                <p>Checkout</p>
               </div>
             )}
             <div

@@ -13,7 +13,7 @@ export default function CategoryGrid({ title }) {
           <div
             className="absolute inset-0 bg-cover bg-center rounded-xl opacity-60 group-hover:opacity-100 transition-opacity duration-300 ease-in-out"
             style={{
-              backgroundImage: "url('https://i.ibb.co/LrKMFpC/HookEm.png')",
+              backgroundImage: "url('https://i.ibb.co/58SwMXp/Knuckles.png')",
             }}
           ></div>
         </a>

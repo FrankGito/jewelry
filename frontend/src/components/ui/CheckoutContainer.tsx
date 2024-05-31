@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import HookEmHorns from "../canvas/HookEm";
 
 export default function CheckoutContainer({ customizedData }) {
   const [shippingAddress, setShippingAddress] = useState({
@@ -45,11 +46,9 @@ export default function CheckoutContainer({ customizedData }) {
             <div className="flow-root">
               <ul role="list" className="-my-6 divide-y divide-gray-200">
                 <li className="flex space-x-6 py-6">
-                  <img
-                    src="https://tailwindui.com/img/ecommerce-images/checkout-page-05-product-01.jpg"
-                    alt="Front of women's basic tee in heather gray."
-                    className="h-24 w-24 flex-none rounded-md bg-gray-100 object-cover object-center"
-                  />
+                  <div className="h-64 w-64 flex-none rounded-md bg-gray-100 object-cover object-center">
+                    <HookEmHorns />
+                  </div>
                   <div className="flex-auto">
                     <div className="space-y-1 sm:flex sm:items-start sm:justify-between sm:space-x-6">
                       <div className="flex-auto space-y-1 text-sm font-medium">
