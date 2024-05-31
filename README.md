@@ -2,7 +2,7 @@
 <img src="https://i.ibb.co/ggWXq4g/image-2024-05-30-235907682.png" alt="logo" width="120" height="120" />
 </div>
 
-<h3 align="center">Jewelry</h3>
+<h3 align="center">Babes</h3>
   <p align="center">
   <br />
     <a href="http://jewelry.surge.sh">Demo v0.0.1</a>
@@ -18,7 +18,7 @@
 ##Contacts
 ![Screenshot](https://i.ibb.co/rsKbqp3/Frontend.png)
 
-## Summary 
+## Summary
 
 Welcome to the Babes Repository!
 
@@ -37,24 +37,22 @@ We are Frank, Don, Sam, Watson, and Theresa. Our project aims to revolutionize t
 - **Web3 Integration**: Utilizes Web3 technologies for decentralized and secure transactions.
 - **3D Rendering**: Employs TLGB for high-quality 3D rendering of jewelry designs.
 - **NextJS & Tailwind**: Modern web technologies for a responsive and user-friendly platform.
-- **Smart Contracts**: Implemented using Rust and ink! for secure and efficient blockchain operations.
 - **Decentralized 3D Printing**: Future plans to scale with Robonomics for decentralized 3D printing capabilities.
 
 ### Deep Dive
 
-- [About Print](./frontend/public/About.md)
-- [UiUx README.md](./uiux/README.md)
-
-- [Backend README.md](./Backend/README.md)
-- [Contracts README.md](./contracts/README.md)
-- [Frontend README.md](./frontend/README.md)
+- [Robonomics README.md](./robonomics/README.md)
+- [Unique README.md](./unique/README.md)
+- [Phala README.md](./README.md)
+- [Ai 3D Generation](./aiprompt/)
+- [Frontend](./frontend/README.md)
 
 ## Contact
 
-|Name|Discord|Telegram|
-|:-|:-|:-|
-|Frank|FrankBevr|FrankBevr|
-|Don|Aemula|Aemula|
-|Sam|unlisted|unlisted|
-|Watson|watsonlr|watsonlr|
-|Theresa|Seshat|Seshat7|
+| Name    | Discord   | Telegram  |
+| :------ | :-------- | :-------- |
+| Frank   | FrankBevr | FrankBevr |
+| Don     | Aemula    | Aemula    |
+| Sam     | unlisted  | unlisted  |
+| Watson  | watsonlr  | watsonlr  |
+| Theresa | Seshat    | Seshat7   |
