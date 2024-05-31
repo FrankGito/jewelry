@@ -16,7 +16,7 @@
 ## Screenshot
 
 
-![Screenshot](https://i.ibb.co/ygvCpVS/image-2024-05-31-113215145.png)
+[![Screenshot](https://i.ibb.co/ygvCpVS/image-2024-05-31-113215145.png)](https://i.ibb.co/nQdyBRC/image-2024-05-31-113215145.png)
 
 ## Summary
 
