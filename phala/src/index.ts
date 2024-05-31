@@ -4,7 +4,8 @@ import { renderHtml } from "./uiSupport";
 async function GET(req: Request): Promise<Response> {
   // Hardcode ApiKey && construct Header
   const api_key = "msy_71TlZfQPhg5RgkpwHIGeoXOsPEM36opN35Tx";
-  const headers = new Headers({ Authorization: `Bearer ${api_key}` });
+  // Its a nodeJS thing, hilrarious
+  // const headers = new Headers({ Authorization: `Bearer ${api_key}` });
 
   // Declare upper scoped  taskId & modelUrl variable
   let taskId = "";
@@ -29,7 +30,10 @@ async function GET(req: Request): Promise<Response> {
 
     const response = await fetch("https://api.meshy.ai/v2/text-to-3d", {
       method: 'POST',
-      headers,
+      headers: {
+        "Content-Type": "application/json",
+        "Authorization": `Bearer ${api_key}`
+      },
       body: JSON.stringify(payload)
     });
 
@@ -38,7 +42,10 @@ async function GET(req: Request): Promise<Response> {
 
     const response2 = await fetch(`https://api.meshy.ai/v2/text-to-3d/${taskId}`, {
       method: 'GET',
-      headers
+      headers: {
+        "Content-Type": "application/json",
+        "Authorization": `Bearer ${api_key}`
+      },
     });
 
     const data2 = await response2.json();
@@ -48,7 +55,10 @@ async function GET(req: Request): Promise<Response> {
     while (status === "IN_PROGRESS") {
       const response = await fetch(`https://api.meshy.ai/v2/text-to-3d/${taskId}`, {
         method: 'GET',
-        headers
+        headers: {
+          "Content-Type": "application/json",
+          "Authorization": `Bearer ${api_key}`
+        },
       });
 
       const data = await response.json();

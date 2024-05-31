@@ -1,3 +1,9 @@
+Gotcha :dart:
+
+> [!IMPORTANT]  
+> Crucial information necessary for users to succeed.
+> `curl https://agents.phala.network/ipfs/QmZrPRvmC4FqLfmjqRnWi2XsPJq1TmtNpQd5zs3qYXg6rH/0 -v`
+
 <div align="center">
   <a href="https://github.com/Phala-Network/ai-agent-template-openai">
     <h1>AI Agent Contract Template with OpenAI</h1>
