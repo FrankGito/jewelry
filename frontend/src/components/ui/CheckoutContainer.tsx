@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import HookEmHorns from "../canvas/HookEm";
 
-export default function CheckoutContainer() {
+export default function CheckoutContainer({ customizedData }) {
   const [shippingAddress, setShippingAddress] = useState({
     email: "",
     phone: "",
@@ -17,7 +17,7 @@ export default function CheckoutContainer() {
   });
 
   useEffect(() => {
-    console.log(customizedData); // Log the customized data
+    console.log(customizedData);
   }, [customizedData]);
 
   const handleInputChange = (e) => {
