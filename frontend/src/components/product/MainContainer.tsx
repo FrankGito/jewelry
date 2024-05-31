@@ -29,7 +29,7 @@ export default function MainContainer() {
   };
 
   const handleMint = () => {
-    alert("FUNCTIONAL");
+    alert("Minted!");
     setPhase("Checkout");
   };
 
