@@ -8,7 +8,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ProductPage from "./pages/Product.tsx";
 import CheckoutPage from "./pages/Checkout.tsx";
 import Phala from './Phala.tsx'
-import Three from './components/Three.tsx'
+import Three from './components/canvas/Three.tsx'
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
