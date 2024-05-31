@@ -28,18 +28,20 @@ This platform not only enhances the personalization of merchandise but also ensu
 
 <details>
   <summary>See key features</summary>
-- **Generative AI**: Utilizes meshy.ai to design unique and personalized jewelry based on user prompts.
-- **AI Agents**: Phala AI agent enhances user interaction and customization capabilities.
-- **E-commerce Platform**: Built using Talisman for efficient management of digital assets and transactions.
-- **Automation**: Streamlined operations for efficient process management.
-- **NFTs**: Integration with Unique Network for creating and authenticating NFTs, adding a layer of exclusivity and security.
-- **Blockchain**: Powered by Polkadot, ensuring interoperability, scalability, and robust security.
-- **Direct-to-Consumer**: Allows users to directly customize and purchase their unique jewelry.
-- **Customizable for Businesses**: Provides options for businesses and sports teams to create branded, personalized merchandise.
-- **Web3 Integration**: Utilizes Web3 technologies for decentralized and secure transactions.
-- **3D Rendering**: Employs TLGB for high-quality 3D rendering of jewelry designs.
-- **NextJS & Tailwind**: Modern web technologies for a responsive and user-friendly platform.
-- **Decentralized 3D Printing**: Future plans to scale with Robonomics for decentralized 3D printing capabilities.
+
+- **Generative AI**: Utilizes meshy.ai to design unique and personalized jewelry based on user prompts.  
+- **AI Agents**: Phala AI agent enhances user interaction and customization capabilities.  
+- **E-commerce Platform**: Built using Talisman for efficient management of digital assets and transactions.  
+- **Automation**: Streamlined operations for efficient process management.  
+- **NFTs**: Integration with Unique Network for creating and authenticating NFTs, adding a layer of exclusivity and security.  
+- **Blockchain**: Powered by Polkadot, ensuring interoperability, scalability, and robust security.  
+- **Direct-to-Consumer**: Allows users to directly customize and purchase their unique jewelry.  
+- **Customizable for Businesses**: Provides options for businesses and sports teams to create branded, personalized merchandise.  
+- **Web3 Integration**: Utilizes Web3 technologies for decentralized and secure transactions.  
+- **3D Rendering**: Employs TLGB for high-quality 3D rendering of jewelry designs.  
+- **NextJS & Tailwind**: Modern web technologies for a responsive and user-friendly platform.  
+- **Decentralized 3D Printing**: Future plans to scale with Robonomics for decentralized 3D printing capabilities.  
+
 </details>
 
 ## Elaboration
