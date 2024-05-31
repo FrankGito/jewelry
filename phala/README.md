@@ -38,37 +38,46 @@ The OpenAI AI Agent template is a **MINIMAL** template to build an AI Agent that
 - 🔒 Private: Host API keys and user privacy at ease
 - 💎 Unstoppable: Powered by IPFS and Phala's 35k+ decentralized TEE workers
 
-[//]: # (<img width="320" src="https://media1.tenor.com/m/NBtFH5F9QTgAAAAd/what-is-my-purpose-butter.gif" />)
+[//]: # '<img width="320" src="https://media1.tenor.com/m/NBtFH5F9QTgAAAAd/what-is-my-purpose-butter.gif" />'
 
 ## Getting Started
+
 ### Prepare
+
 Install dependencies
+
 ```shell
 npm install
 ```
 
 ### Testing Locally
+
 Create `.env` file and add your OpenAI API Key
+
 ```shell
 cp .env.local .env
 ```
 
 In `.env` file replace `YOUR_OPENAI_KEY` with your API Key
+
 ```text
 OPENAI_API_KEY="YOUR_OPENAI_KEY"
 ```
 
 Build your Agent
+
 ```shell
 npm run build
 ```
 
 Test your Agent locally
+
 ```shell
 npm run test
 ```
 
 Expected Test Results
+
 ```shell
 INPUT: {"method":"GET","path":"/ipfs/QmVHbLYhhYA5z6yKpQr4JWr3D54EhbSsh7e7BFAAyrkkMf","queries":{"chatQuery":["Who are you?"]},"secret":{"openaiApiKey":"YOUR_OPENAI_KEY"},"headers":{}}
 GET RESULT: {
@@ -117,12 +126,15 @@ POST RESULT: {
 ```
 
 ### Publish Your AI Agent
+
 Upload your compiled AI Agent code to IPFS.
+
 ```shell
 npm run publish
 ```
 
 Upon a successful upload, the command should show the URL to access your AI Agent.
+
 > AI Agent deployed at: https://agents.phala.network/ipfs/QmQu9AmBL13tyGpxgg5ASt96WQ669p63rnJRWiAo9st8ns/0
 >
 > Make sure to add your secrets to ensure your AI Agent works properly.
@@ -152,7 +164,7 @@ By default, all the compiled JS code is visible for anyone to view if they look 
 The steps to add a `secret` is simple. We will add the [OpenAI](https://platform.openai.com/docs/quickstart?context=node) API Key in this example by creating a secret JSON object with the `openaiApiKey`:
 
 ```json
-{"openaiApiKey": "<OPENAI_API_KEY>"}
+{ "openaiApiKey": "<OPENAI_API_KEY>" }
 ```
 
 Then in your frame code, you will be able to access the secret key via `req.secret` object:
@@ -169,6 +181,7 @@ async function POST(req: Request): Promise<Response> {
 Use `curl` to `POST` your secrets to `https://agents.phala.network/vaults`. Replace `IPFS_CID` with the CID to the compile JS code in IPFS, and replace `<OPENAI_API_KEY>` with your OpenAI API key. Note that you can name the secret field name something other than `openaiApiKey`, but you will need to access the key in your `index.ts` file with the syntax `req.secret?.<your-secret-field-name> as string`
 
 The command will look like this:
+
 ```shell
 curl https://agents.phala.network/vaults -H 'Content-Type: application/json' -d '{"cid": "IPFS_CID", "data": {"openaiApiKey": "<OPENAI_API_KEY>"}}'
 # Output:
@@ -178,16 +191,19 @@ curl https://agents.phala.network/vaults -H 'Content-Type: application/json' -d 
 The API returns a `token` and a `key`. The `key` is the id of your secret. It can be used to specify which secret you are going to pass to your frame. The `token` can be used by the developer to access the raw secret. You should never leak the `token`.
 
 To verify the secret, run the following command where `key` and `token` are replaced with the values from adding your `secret` to the vault.
+
 ```shell
 curl https://agents.phala.network/vaults/<key>/<token>
 ```
 
 Expected output:
+
 ```shell
 {"data":{"openaiApiKey":"<OPENAI_API_KEY>"},"succeed":true}
 ```
 
 If you are using secrets, make sure that your URL is set in the following syntax where `cid` is the IPFS CID of your compiled JS file and `key` is the `key` from adding secrets to your vault.
+
 ```text
 https://agents.phala.network/ipfs/<cid>?key=<key>
 ```
@@ -198,12 +214,14 @@ https://agents.phala.network/ipfs/Qma2WjqWqW8wYG2tEQ9YFUgyVrMDA9VzvkkdeFny7Smn3R
 </details>
 
 ### Access Queries
+
 To help create custom logic, we have an array variable named `queries` that can be accessed in the `Request` class. To access the `queries` array variable `chatQuery` value at index `0`, the syntax will look as follows:
+
 ```typescript
 const query = req.queries.chatQuery[0] as string;
 ```
-The example at https://agents.phala.network/ipfs/Qma2WjqWqW8wYG2tEQ9YFUgyVrMDA9VzvkkdeFny7Smn3R/0?key=686df81d326fa5f2&chatQuery=When%20did%20humans%20land%20on%20the%20moon will have a value of `When did humans land on the moon`. `queries` can have any field name, so `chatQuery` is just an example of a field name and not a mandatory name, but remember to update your `index.ts` file logic to use your expected field name.
 
+The example at https://agents.phala.network/ipfs/Qma2WjqWqW8wYG2tEQ9YFUgyVrMDA9VzvkkdeFny7Smn3R/0?key=686df81d326fa5f2&chatQuery=When%20did%20humans%20land%20on%20the%20moon will have a value of `When did humans land on the moon`. `queries` can have any field name, so `chatQuery` is just an example of a field name and not a mandatory name, but remember to update your `index.ts` file logic to use your expected field name.
 
 ## FAQ
 
