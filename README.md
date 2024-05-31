@@ -43,6 +43,7 @@ This platform not only enhances the personalization of merchandise but also ensu
 
 **How This Project Enhances The Polkadot Ecosystem**
 The project benefits the Polkadot ecosystem by showcasing its strengths in interoperability, security, and scalability. It integrates various Polkadot-based technologies (like meshy.ai, Phala, Talisman, and Unique Network) to create a seamless and innovative platform. This not only highlights Polkadot's capabilities in handling complex, decentralized applications but also promotes its ecosystem by driving adoption and fostering collaboration among different blockchain projects. Additionally, leveraging Polkadot’s community and resources accelerates development and enhances the overall appeal of the platform.
+
 **Revenue Model**
 
 	1.	Direct Sales
