@@ -24,7 +24,7 @@ Welcome to the Babes Repository!
 
 We are Frank, Don, Sam, Watson, and Theresa. Our project aims to revolutionize the sports merchandise industry by leveraging generative AI and the Polkadot blockchain. We provide an innovative platform for creating customized 3D printed jewelry tailored specifically for sports teams and their fans. This platform not only enhances the personalization of merchandise but also ensures secure and transparent transactions.
 
-## Key Features##
+## Key Features
 
 - **Generative AI**: Utilizes meshy.ai to design unique and personalized jewelry based on user prompts.
 - **AI Agents**: Phala AI agent enhances user interaction and customization capabilities.
