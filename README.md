@@ -13,9 +13,9 @@
 </div>
 
 ## Screenshot
-
+<div align="center">
 ![https://i.ibb.co/f4yG2d4/Header.png](https://i.ibb.co/f4yG2d4/Header.png)
-
+</div>
 ## Summary
 
 Welcome to the Babes Repository!
