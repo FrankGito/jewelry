@@ -81,7 +81,7 @@ Cheers :sun_partially_clouded:
 
 ### Deep Dive
 
-- [Robonomics README.md](https://github.com/FrankGito/jewelry/tree/main/robonomics/home-assistant-web3-build#readme)
+- [Robonomics README.md](https://github.com/FrankGito/jewelry/tree/main/robonomics/README.md)
 - [Unique README.md](https://github.com/FrankGito/jewelry/tree/main/unique#readme)
 - [Phala README.md](https://github.com/FrankGito/jewelry/tree/main/phala#readme)
 - [Ai 3D Generation](https://github.com/FrankGito/jewelry/tree/main/aiprompt#readme)
