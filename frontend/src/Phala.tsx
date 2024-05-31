@@ -2,14 +2,15 @@ import { useEffect } from 'react'
 import { useState } from 'react'
 
 
-export default function App() {
+export default function Phala() {
   const [content, setContent] = useState("my respnse")
 
   useEffect(() => {
     let result = ''
     const fetchy = async () => {
       const cid = "Qmf42ify53cRmntkVKA6HbZQhuzHLNM7N7MM8C5sWCr4f6/0"
-      const key = "99b9ff79ec4aaa7c"
+      const key = "b92f78f7fff0ef61"
+
       const res = await fetch(`https://agents.phala.network/ipfs/${cid}?key=${key}`)
       console.log(res)
       if (res.ok) {

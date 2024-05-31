@@ -7,6 +7,7 @@ import HomePage from "./pages/HomePage.tsx";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ProductPage from "./pages/Product.tsx";
 import CheckoutPage from "./pages/Checkout.tsx";
+import Phala from './Phala.tsx'
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
@@ -16,6 +17,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
         <Route path="/Product" element={<ProductPage />} />
         <Route path="/Product/:id" element={<ProductPage />} />
         <Route path="/Checkout" element={<CheckoutPage />} />
+        <Route path="/Phala" element={<Phala />} />
       </Routes>
     </Router>{" "}
   </React.StrictMode>,
