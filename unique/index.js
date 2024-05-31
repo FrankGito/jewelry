@@ -27,6 +27,7 @@ async function main() {
     ////////////////////////////////////
     // Create collection - quick simple way
     ////////////////////////////////////
+    /*
     const { parsed, error } = await sdk.collection.create.submitWaitResult({
       address,
       name: "Test collection",
@@ -41,6 +42,7 @@ async function main() {
 
     const collectionId = parsed?.collectionId;
     console.log(`Collection created. Id: ${collectionId}`);
+    */
 
     ////////////////////////////////////
     // Burn token (commented out)
@@ -56,21 +58,19 @@ async function main() {
     */
 
     ////////////////////////////////////
-    // Mint token (commented out)
+    // Mint token
     ////////////////////////////////////
-    /*
+    const collectionId = 2869;
+
     const result = await sdk.token.create.submitWaitResult({
       address,
       collectionId,
       data: {
-        image: {
-          ipfsCid: "QmcAcH4F9HYQtpqKHxBFwGvkfKb8qckXj2YWUrcc8yd24G/image1.png",
-        },
         name: {
-          _: "My token",
+          _: "Test Babes token",
         },
         description: {
-          _: "Sample token",
+          _: "Test token description",
         },
       },
     });
@@ -78,7 +78,6 @@ async function main() {
     const tokenId = result.parsed?.tokenId;
 
     console.log(`Created token ${tokenId} in collection ${collectionId}`);
-    */
   } catch (error) {
     console.error("Error in main function:", error);
   }
