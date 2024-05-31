@@ -4,8 +4,8 @@ import CheckoutContainer from "@/components/ui/CheckoutContainer";
 const CheckoutPage = () => {
   return (
     <>
-      <Navigation />;
-      <CheckoutContainer />;
+      <Navigation />
+      <CheckoutContainer />
     </>
   );
 };
