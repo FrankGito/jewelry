@@ -24,7 +24,7 @@ This cli script builds the base for a succesfull integration on the Frontend.
 
 ## TODO
 - [x] create default account
-- [ ] create collection on unique
+- [x] create collection on unique
 - [ ] mint empty token
 - [ ] mint non empty token
 - [ ] use cli and pass token to tokencreation
