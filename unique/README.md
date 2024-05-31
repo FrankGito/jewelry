@@ -24,7 +24,13 @@ This cli script builds the base for a succesfull integration on the Frontend.
 
 ## TODO
 - [x] create default account
-- [ ] create collection on unique
-- [ ] mint empty token
+- [x] create collection on unique
+- [x] mint empty token
 - [ ] mint non empty token
 - [ ] use cli and pass token to tokencreation
+
+## Iteration 1
+Created a default account for test minting on opal  
+Created a test collection with id: 2869  
+Minted a test NFT to collection 2869 with token id: 1
+https://uniquescan.io/opal/tokens/2869/1
