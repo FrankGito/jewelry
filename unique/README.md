@@ -20,7 +20,7 @@ This cli script builds the base for a succesfull integration on the Frontend.
 ## Quickstart
 
 1. `pnpm install`
-2. `pnpm run cli`
+2. `node index.js`
 
 ## TODO
 - [x] create default account
