@@ -15,33 +15,33 @@ async function main() {
   ////////////////////////////////////
   // Create collection - quick simple way
   ////////////////////////////////////
-  // const { parsed, error } = await sdk.collection.create.submitWaitResult({
-  //   address,
-  //   name: "Test collection",
-  //   description: "My test collection",
-  //   tokenPrefix: "TST",
-  // });
-  //
-  // if (error) {
-  //   console.log("create collection error", error);
-  //   process.exit();
-  // }
-  // const collectionId = parsed?.collectionId; /*as number*/
-  // console.log(`Collection created. Id: ${collectionId}`);
+  const { parsed, error } = await sdk.collection.create.submitWaitResult({
+    address,
+    name: "Test collection",
+    description: "My test collection",
+    tokenPrefix: "TST",
+  });
+  
+  if (error) {
+    console.log("create collection error", error);
+    process.exit();
+  }
+  const collectionId = parsed?.collectionId; /*as number*/
+  console.log(`Collection created. Id: ${collectionId}`);
 
   ////////////////////////////////////
   // Burn token
   ////////////////////////////////////
-  const collectionId = 2716;
-  const burnResult = await sdk.token.burn.submitWaitResult({
-    address,
-    collectionId,
-    tokenId: 2,
-  });
-  const tokenIdBurned = burnResult.parsed?.tokenId; /*as number*/
-  console.log(`Burned token ${tokenIdBurned} in collection ${collectionId}`);
+//   const collectionId = 2716;
+//   const burnResult = await sdk.token.burn.submitWaitResult({
+//     address,
+//     collectionId,
+//     tokenId: 2,
+//   });
+//   const tokenIdBurned = burnResult.parsed?.tokenId; /*as number*/
+//   console.log(`Burned token ${tokenIdBurned} in collection ${collectionId}`);
 
-  console.log("-------------------------------------------");
+//   console.log("-------------------------------------------");
 
   ////////////////////////////////////
   // Mint token

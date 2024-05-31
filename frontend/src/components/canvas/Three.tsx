@@ -20,12 +20,12 @@ export default function Three() {
         <OrbitControls autoRotate minPolarAngle={Math.PI / 2} maxPolarAngle={Math.PI / 1.8} />
         <pointLight position={[10, 10, 5]} />
         <pointLight position={[-10, -10, -5]} />
-        <ambientLight intensity={0.4} />
+        <ambientLight intensity={0.5} />
         <group position={[0, -1.5, 0]}>
           <Float position={[0, 1, 0]} speed={0.1} rotationIntensity={0.1} floatIntensity={2}>
             <mesh castShadow receiveShadow>
-              <Model url="/flamingo.glb" />
-              <meshStandardMaterial color="pink" roughness={0.1} metalness={0.925} />
+              <Model url="/punch-pendant-horns-gold.glb" />
+              <meshStandardMaterial color="white" roughness={0.1} metalness={10} />
             </mesh>
           </Float>
           <ContactShadows scale={10} blur={3} opacity={0.25} far={10} />
