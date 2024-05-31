@@ -41,11 +41,11 @@ We are Frank, Don, Sam, Watson, and Theresa. Our project aims to revolutionize t
 
 ### Deep Dive
 
-- [Robonomics README.md](./robonomics/README.md)
-- [Unique README.md](./unique/README.md)
-- [Phala README.md](./README.md)
-- [Ai 3D Generation](./aiprompt/)
-- [Frontend](./frontend/README.md)
+- [Robonomics README.md](https://github.com/FrankGito/jewelry/tree/main/robonomics/home-assistant-web3-build#readme)
+- [Unique README.md](https://github.com/FrankGito/jewelry/tree/main/unique#readme)
+- [Phala README.md](https://github.com/FrankGito/jewelry/tree/main/phala#readme)
+- [Ai 3D Generation](https://github.com/FrankGito/jewelry/tree/main/aiprompt#readme)
+- [Frontend](https://github.com/FrankGito/jewelry/tree/main/frontend#readme)
 
 ## Contact
 
