@@ -1,4 +1,8 @@
-export default function PopularGrid({ title }) {
+type Props = {
+  title: string;
+};
+
+export default function PopularGrid({ title }: Props) {
   return (
     <>
       <div className="bg-black">

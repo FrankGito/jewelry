@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import HookEmHorns from "../canvas/HookEm";
 
-export default function CheckoutContainer({ customizedData }) {
+export default function CheckoutContainer() {
   const [shippingAddress, setShippingAddress] = useState({
     email: "",
     phone: "",
