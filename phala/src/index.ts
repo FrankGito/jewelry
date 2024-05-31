@@ -3,8 +3,9 @@ import { renderHtml } from "./uiSupport";
 import axios from "axios";
 
 async function GET(req: Request): Promise<Response> {
-  // Hardcode ApiKey
+  // Hardcode ApiKey && construct Header
   const api_key = "msy_71TlZfQPhg5RgkpwHIGeoXOsPEM36opN35Tx";
+  const headers = { Authorization: `Bearer ${api_key}` };
 
   // Declare upper scoped  taskId & modelUrl variable
   let taskId = "";
@@ -13,8 +14,6 @@ async function GET(req: Request): Promise<Response> {
   // Declare prompt input
   const prompt = "Penguin";
 
-  // Declare Header
-  const headers = { Authorization: `Bearer ${api_key}` };
 
   // Prepare API Payload
   const payload = {
@@ -63,7 +62,7 @@ async function GET(req: Request): Promise<Response> {
           console.log("glb Model URL not found in the response.");
         }
       } else if (status === "IN_PROGRESS") {
-        console.log("Please wait, the model is still being rendered.");
+        // console.log("Please wait, the model is still being rendered.");
         // Wait for a few seconds before checking again
         await new Promise((resolve) => setTimeout(resolve, 5000));
       } else {
