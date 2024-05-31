@@ -14,7 +14,7 @@
 
 ## Screenshot
 <div align="center">
-![https://i.ibb.co/f4yG2d4/Header.png](https://i.ibb.co/f4yG2d4/Header.png)
+	<img src="https://i.ibb.co/f4yG2d4/Header.png](https://i.ibb.co/f4yG2d4/Header.png" />
 </div>
 ## Summary
 
