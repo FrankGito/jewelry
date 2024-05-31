@@ -5,9 +5,8 @@
 <h3 align="center">Babes</h3>
   <p align="center">
   <br />
-    <a href="http://jewelry.surge.sh">Demo v0.0.1</a>
+    <a href="http://babes.surge.sh">Babes Demo v0.0.1</a>
     ·
-    <a href="https://youtu.be">Youtube</a>
     ·
     <a href="https://github.com/frankgito/jewelry">Repo</a>
   </p>
