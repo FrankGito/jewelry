@@ -45,23 +45,31 @@ program
   .description('Get the model data by task ID')
   .action(async (taskId) => {
     try {
-      const response = await axios.get(
-        `https://api.meshy.ai/v2/text-to-3d/${taskId}`,
-        { headers }
-      );
+      let status = 'IN_PROGRESS';
+      while (status === 'IN_PROGRESS') {
+        const response = await axios.get(
+          `https://api.meshy.ai/v2/text-to-3d/${taskId}`,
+          { headers }
+        );
 
-      const { status, model_urls } = response.data;
+        status = response.data.status;
 
-      if (status === 'SUCCEEDED') {
-        if (model_urls && model_urls.glb) {
-          console.log('glb Model URL:', model_urls.glb);
+        if (status === 'SUCCEEDED') {
+          const { model_urls, thumbnail_url } = response.data;
+          if (model_urls && model_urls.glb) {
+            console.log('glb Model URL:', model_urls.glb);
+            console.log('Thumbnail URL:', thumbnail_url);
+          } else {
+            console.log('glb Model URL not found in the response.');
+          }
+        } else if (status === 'IN_PROGRESS') {
+          console.log('Please wait, the model is still being rendered.');
+          // Wait for a few seconds before checking again
+          await new Promise(resolve => setTimeout(resolve, 5000));
         } else {
-          console.log('glb Model URL not found in the response.');
+          console.log(`Task status: ${status}`);
+          break;
         }
-      } else if (status === 'IN_PROGRESS') {
-        console.log('Please wait, the model is still being rendered.');
-      } else {
-        console.log(`Task status: ${status}`);
       }
     } catch (error) {
       console.error('Error fetching model:', error.message);
